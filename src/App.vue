@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+
     <div class="wrapper">
       <transition-group name="fade">
         <Intro key="dynamic" class="animated" v-if="currentView != 2" />
@@ -24,8 +25,8 @@ import Nav from './components/Nav.vue';
 import Projects from './components/Projects.vue';
 import Resume from './components/Resume.vue';
 import Footer from './components/Footer.vue';
-import BlogHome from './components/BlogHome.vue';
-import BlogPost from './components/BlogPost.vue';
+// import BlogHome from './components/BlogHome.vue';
+// import BlogPost from './components/BlogPost.vue';
 
 export default {
   name: 'app',
