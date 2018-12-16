@@ -18,12 +18,14 @@
 </template>
 
 <script>
-import About from './components/About';
-import Intro from './components/Intro';
-import Nav from './components/Nav';
-import Projects from './components/Projects';
-import Resume from './components/Resume';
-import Footer from './components/Footer';
+import About from './components/About.vue';
+import Intro from './components/Intro.vue';
+import Nav from './components/Nav.vue';
+import Projects from './components/Projects.vue';
+import Resume from './components/Resume.vue';
+import Footer from './components/Footer.vue';
+import BlogHome from './components/BlogHome.vue';
+import BlogPost from './components/BlogPost.vue';
 
 export default {
   name: 'app',
@@ -34,6 +36,7 @@ export default {
     Intro,
     Nav,
     Footer,
+    // BlogHome,
   },
   data: function data() {
     return {
