@@ -1,22 +1,16 @@
 <template>
   <div>
-    <Intro/>
     <Nav/>
-    <About/>
+    <slot/>
   </div>
 </template>
 
 <script>
-import About from '@/components/About.vue';
-import Intro from '@/components/Intro.vue';
 import Nav from '@/components/Nav.vue';
 
 export default {
-  name: 'home',
   components: {
-    About,
     Nav,
-    Intro,
   },
 };
 </script>

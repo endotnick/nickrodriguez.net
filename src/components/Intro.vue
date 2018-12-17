@@ -8,27 +8,27 @@
       <ul>
         <li>
           <a href="mailto:nickbenrodriguez@gmail.com">
-            <font-awesome-icon icon="envelope" />
+            <font-awesome-icon icon="envelope"/>
           </a>
         </li>
         <li>
           <a href="https://github.com/endotnick">
-            <font-awesome-icon :icon="['fab', 'github']" />
+            <font-awesome-icon :icon="['fab', 'github']"/>
           </a>
         </li>
         <li>
           <a href="https://linkedin.com/in/endot">
-            <font-awesome-icon :icon="['fab', 'linkedin-in']" />
+            <font-awesome-icon :icon="['fab', 'linkedin-in']"/>
           </a>
         </li>
         <li>
           <a href="https://instagram.com/endotnick">
-            <font-awesome-icon :icon="['fab', 'instagram']" />
+            <font-awesome-icon :icon="['fab', 'instagram']"/>
           </a>
         </li>
         <li>
           <a href="https://twitter.com/endotnick">
-            <font-awesome-icon :icon="['fab', 'twitter']" />
+            <font-awesome-icon :icon="['fab', 'twitter']"/>
           </a>
         </li>
       </ul>

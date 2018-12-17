@@ -1,58 +1,24 @@
 <template>
   <div id="app">
-
-    <div class="wrapper">
-      <transition-group name="fade">
-        <Intro key="dynamic" class="animated" v-if="currentView != 2" />
-        <div key="main-content" class="animated" >
-          <Nav v-on:viewChangeTriggered="updateView($event)"/>
-          <div id="content">
-            <transition name="component-fade" mode="out-in">
-              <component v-bind:is='currentViewComponent'></component>
-            </transition>
-          </div>
-        </div>
-      </transition-group>
-      <Footer />
-    </div>
+    <component :is='layout'>
+      <router-view/>
+    </component>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import About from './components/About.vue';
-import Intro from './components/Intro.vue';
-import Nav from './components/Nav.vue';
-import Projects from './components/Projects.vue';
-import Resume from './components/Resume.vue';
 import Footer from './components/Footer.vue';
-// import BlogHome from './components/BlogHome.vue';
-// import BlogPost from './components/BlogPost.vue';
 
+const defaultLayout = 'default';
 export default {
   name: 'app',
   components: {
-    About,
-    Projects,
-    Resume,
-    Intro,
-    Nav,
     Footer,
-    // BlogHome,
-  },
-  data: function data() {
-    return {
-      currentView: 0,
-      views: [About, Projects, Resume],
-    };
   },
   computed: {
-    currentViewComponent: function currentViewComponent() {
-      return this.views[this.currentView];
-    },
-  },
-  methods: {
-    updateView: function updateView(val) {
-      this.currentView = val;
+    layout() {
+      return `${(this.$route.meta.layout || defaultLayout)}-layout`;
     },
   },
 };

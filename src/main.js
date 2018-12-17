@@ -10,6 +10,9 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 
+import Default from '@/layouts/Default.vue';
+import CustomNav from '@/layouts/CustomNav.vue';
+
 library.add(
   faEnvelope,
   faCode,
@@ -23,6 +26,9 @@ library.add(
 );
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
+Vue.component('default-layout', Default);
+Vue.component('custom-nav-layout', CustomNav);
+
 Vue.config.productionTip = false;
 
 new Vue({

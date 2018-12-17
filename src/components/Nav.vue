@@ -1,11 +1,11 @@
 <template>
   <nav class="nav">
     <ul>
-      <li><a href='#' v-on:click="setView(0)">About</a></li>
-      <li><a href='#' v-on:click="setView(1)">Projects</a></li>
-      <li><a href='#' v-on:click="setView(2)">Resume</a></li>
+      <li><router-link to="/">About</router-link></li>
+      <li><router-link to="/blog">Blog</router-link></li>
+      <li><router-link to="/projects">Projects</router-link></li>
+      <li><router-link to="/resume">Resume</router-link></li>
       <span><font-awesome-icon icon="arrow-left" /> This is all coming soon</span>
-      <!--li><a href="/blog">Blog</a></li-->
     </ul>
   </nav>
 </template>
@@ -13,11 +13,6 @@
 <script>
 export default {
   name: 'Nav',
-  methods: {
-    setView: function setView(value) {
-      this.$emit('viewChangeTriggered', value);
-    },
-  },
 };
 </script>
 

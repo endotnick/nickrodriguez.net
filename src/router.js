@@ -1,8 +1,5 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
-import BlogHome from './components/BlogHome.vue';
-import BlogPost from './components/BlogPost.vue';
 
 Vue.use(Router);
 
@@ -13,25 +10,28 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home,
+      meta: { layout: 'custom-nav' },
+      component: () => import('./views/Home.vue'),
     },
     {
       path: '/blog',
       name: 'blog-home',
-      component: BlogHome,
+      component: () => import('./views/Blog.vue'),
     },
     {
       path: '/blog/:slug',
       name: 'blog-post',
-      component: BlogPost,
+      component: () => import('./components/BlogPost.vue'),
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
+      path: '/projects',
+      name: 'projects',
+      component: () => import('./views/Projects.vue'),
+    },
+    {
+      path: '/resume',
+      name: 'resume',
+      component: () => import('./views/Resume.vue'),
     },
   ],
 });
