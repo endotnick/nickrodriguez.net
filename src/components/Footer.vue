@@ -24,7 +24,7 @@ export default {
     position: fixed;
     max-width: 800px;
     padding: 1em;
-    width: 100%;
+    width: 100vw;
     bottom: 0;
   }
 

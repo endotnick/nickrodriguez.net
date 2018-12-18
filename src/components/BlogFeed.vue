@@ -51,6 +51,10 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  font-family: lobster, cursive;
+  font-weight: 400;
+}
 figure {
   position: relative;
 }

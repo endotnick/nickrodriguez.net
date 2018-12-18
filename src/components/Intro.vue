@@ -57,9 +57,6 @@ img {
   margin: auto;
   display: block;
 }
-.hello {
-  margin-top: 2em;
-}
 .intro {
   max-width: 800px;
   width: 100%;

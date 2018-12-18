@@ -21,7 +21,7 @@ nav {
   background-color: #FFF;
   border-bottom: 1px solid #d5d5d5;
   max-width: 800px;
-  width: 100%;
+  width: 100vw;
   top: 0;
 }
 </style>

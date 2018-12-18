@@ -73,7 +73,7 @@ figure, img{
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   width: 100%;
-  margin-bottom: 3em;
+  margin: 3em 0;
 }
 .component-fade-enter-active,
 .component-fade-leave-active {
