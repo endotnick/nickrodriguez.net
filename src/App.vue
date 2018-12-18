@@ -1,68 +1,34 @@
 <template>
   <div id="app">
-    <div class="wrapper">
-      <transition-group name="fade">
-        <Intro key="dynamic" class="animated" v-if="currentView != 2" />
-        <div key="main-content" class="animated" >
-          <Nav v-on:viewChangeTriggered="updateView($event)"/>
-          <div id="content">
-            <transition name="component-fade" mode="out-in">
-              <component v-bind:is='currentViewComponent'></component>
-            </transition>
-          </div>
-        </div>
-      </transition-group>
-      <Footer />
-    </div>
+    <component :is='layout'>
+      <router-view/>
+    </component>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import About from './components/About';
-import Intro from './components/Intro';
-import Nav from './components/Nav';
-import Projects from './components/Projects';
-import Resume from './components/Resume';
-import Footer from './components/Footer';
+import Footer from './components/Footer.vue';
 
+const defaultLayout = 'default';
 export default {
   name: 'app',
   components: {
-    About,
-    Projects,
-    Resume,
-    Intro,
-    Nav,
     Footer,
   },
-  data: function data() {
-    return {
-      currentView: 0,
-      views: [About, Projects, Resume],
-    };
-  },
   computed: {
-    currentViewComponent: function currentViewComponent() {
-      return this.views[this.currentView];
-    },
-  },
-  methods: {
-    updateView: function updateView(val) {
-      this.currentView = val;
+    layout() {
+      return `${(this.$route.meta.layout || defaultLayout)}-layout`;
     },
   },
 };
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-  width: 100%;
+/* Prevents vertical scrollbar from shifting page */
+html {
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
 }
 body {
   max-width: 800px;
@@ -90,12 +56,24 @@ a:hover {
 }
 h1 {
   font-size: 3em;
-  font-family:'Helvetica', 'Arial', 'Sans-Serif';
+  text-align: center;
+
 }
 p {
   font-size: 1.5em;
   line-height: 1.4em;
   color: #333;
+}
+figure, img{
+  max-width: 100%;
+}
+#app {
+  font-family: Prompt, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  width: 100%;
+  margin: 3em 0;
 }
 .component-fade-enter-active,
 .component-fade-leave-active {

@@ -8,27 +8,27 @@
       <ul>
         <li>
           <a href="mailto:nickbenrodriguez@gmail.com">
-            <font-awesome-icon icon="envelope" />
+            <font-awesome-icon icon="envelope"/>
           </a>
         </li>
         <li>
           <a href="https://github.com/endotnick">
-            <font-awesome-icon :icon="['fab', 'github']" />
+            <font-awesome-icon :icon="['fab', 'github']"/>
           </a>
         </li>
         <li>
           <a href="https://linkedin.com/in/endot">
-            <font-awesome-icon :icon="['fab', 'linkedin-in']" />
+            <font-awesome-icon :icon="['fab', 'linkedin-in']"/>
           </a>
         </li>
         <li>
           <a href="https://instagram.com/endotnick">
-            <font-awesome-icon :icon="['fab', 'instagram']" />
+            <font-awesome-icon :icon="['fab', 'instagram']"/>
           </a>
         </li>
         <li>
           <a href="https://twitter.com/endotnick">
-            <font-awesome-icon :icon="['fab', 'twitter']" />
+            <font-awesome-icon :icon="['fab', 'twitter']"/>
           </a>
         </li>
       </ul>
@@ -44,7 +44,7 @@ export default {
 
 <style scoped>
 h1 {
-    margin: .3em 0;
+    margin: .2em 0;
 }
 ul {
   font-size: 1.5em;
@@ -54,10 +54,16 @@ img {
   border-radius: 15em;
   width: 200px;
   height: auto;
+  margin: auto;
+  display: block;
 }
 .intro {
   max-width: 800px;
   width: 100%;
-  height: 350px;
+}
+.social ul {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 0.7em;
 }
 </style>
