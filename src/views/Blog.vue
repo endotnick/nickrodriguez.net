@@ -1,17 +1,16 @@
 <template>
   <div class="blog">
-    <h1> This is a blog view! </h1>
-    <BlogHome/>
+    <BlogFeed/>
   </div>
 </template>
 
 <script>
-import BlogHome from '@/components/BlogHome.vue';
+import BlogFeed from '@/components/BlogFeed.vue';
 
 export default {
   name: 'blog',
   components: {
-    BlogHome,
+    BlogFeed,
   },
 };
 </script>

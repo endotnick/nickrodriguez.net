@@ -15,7 +15,7 @@ export default new Router({
     },
     {
       path: '/blog',
-      name: 'blog-home',
+      name: 'blog-feed',
       component: () => import('./views/Blog.vue'),
     },
     {

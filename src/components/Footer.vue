@@ -3,7 +3,7 @@
     <span>
       <font-awesome-icon icon="code" /> w/ <font-awesome-icon icon="heart" /> by <a href='https://github.com/endotnick/endotnick.github.io'>n.</a>
     </span>
-      <br>
+    <span> | </span>
     <span>
       <font-awesome-icon icon="file" /> served by <a href='https://buttercms.com'><img src="../assets/butter-y.webp"/></a>
     </span>

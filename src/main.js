@@ -1,6 +1,6 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
-  faEnvelope, faArrowLeft, faCode, faHeart, faFile,
+  faEnvelope, faArrowLeft, faArrowRight, faCode, faHeart, faFile,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub, faLinkedinIn, faInstagram, faTwitter,
@@ -18,6 +18,7 @@ library.add(
   faCode,
   faHeart,
   faArrowLeft,
+  faArrowRight,
   faGithub,
   faLinkedinIn,
   faInstagram,

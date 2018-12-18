@@ -67,6 +67,9 @@ p {
   line-height: 1.4em;
   color: #333;
 }
+figure, img{
+  max-width: 100%;
+}
 .component-fade-enter-active,
 .component-fade-leave-active {
   transition: opacity .3s ease;
