@@ -20,3 +20,11 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+nav {
+  border-width: 1px 0;
+  border-color: #d5d5d5;
+  border-style: solid;
+}
+</style>

@@ -26,12 +26,10 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: Prompt, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
   width: 100%;
 }
 body {
@@ -60,7 +58,8 @@ a:hover {
 }
 h1 {
   font-size: 3em;
-  font-family:'Helvetica', 'Arial', 'Sans-Serif';
+  text-align: center;
+
 }
 p {
   font-size: 1.5em;

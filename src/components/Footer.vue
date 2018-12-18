@@ -1,7 +1,7 @@
 <template>
   <footer>
     <span>
-      <font-awesome-icon icon="code" /> w/ <font-awesome-icon icon="heart" /> by <a href='https://github.com/endotnick/endotnick.github.io'>n.</a>
+      <font-awesome-icon icon="code" /> w/ <font-awesome-icon icon="heart" /> by <a href='https://github.com/endotnick/nickrodriguez.net'>n.</a>
     </span>
     <span> | </span>
     <span>
@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
   footer {
-    font-family: 'Lobster', sans-serif;
+    font-family: 'Lobster', cursive;
     bottom: 1em;
     position: absolute;
     text-align: center;

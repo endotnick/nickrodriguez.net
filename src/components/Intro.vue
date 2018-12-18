@@ -44,7 +44,7 @@ export default {
 
 <style scoped>
 h1 {
-    margin: .3em 0;
+    margin: .2em 0;
 }
 ul {
   font-size: 1.5em;
@@ -54,10 +54,19 @@ img {
   border-radius: 15em;
   width: 200px;
   height: auto;
+  margin: auto;
+  display: block;
+}
+.hello {
+  margin-top: 2em;
 }
 .intro {
   max-width: 800px;
   width: 100%;
-  height: 350px;
+}
+.social ul {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 0.7em;
 }
 </style>

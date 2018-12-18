@@ -7,9 +7,14 @@
             <figure>
               <img v-if='post.featured_image' :src='post.featured_image' alt=''>
               <img v-else src='http://via.placeholder.com/250x250' alt=''>
+              <figcaption>
+                <span class='post_title'>{{ post.title }}</span>
+                <span class='post_author'>
+                by {{ post.author.first_name }} {{ post.author.last_name }}
+                </span>
+              </figcaption>
             </figure>
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.summary }}</p>
+              <p>{{ post.summary }}</p>
           </article>
         </router-link>
       </div>
@@ -40,11 +45,52 @@ export default {
   },
   created() {
     this.getPosts();
-    this.getCategories();
-    this.getPostsByCategory();
   },
 };
 </script>
 
 <style scoped>
+figure {
+  position: relative;
+}
+
+figure::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 33%;
+  background-image: linear-gradient(180deg,rgba(10,9,8,.33),transparent);
+}
+
+figure::before:hover {
+  background-color: rgba(10,9,8,0.65);
+}
+/* img:hover {
+  opacity: 0.5;
+} */
+
+figcaption {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.post_title {
+  padding-top: 0.2rem;
+  padding-left: 0.75rem;
+  color: #fcfdff;
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-family: Prompt,Helvetica,Arial,sans-serif;
+  font-weight: semi-bold;
+}
+
+.post_author {
+  position: absolute;
+  bottom: .75rem;
+  right: .75rem;
+}
 </style>

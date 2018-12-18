@@ -14,3 +14,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+nav {
+  border-bottom: 1px solid #d5d5d5;
+}
+</style>

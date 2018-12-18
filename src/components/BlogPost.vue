@@ -9,14 +9,14 @@
       :to='`/minutiae/${post.meta.previous_post.slug}`'
       class='button'
     >
-      <span><font-awesome-icon icon='arrow-left' /></span>{{ post.meta.previous_post.title }}
+      <span><font-awesome-icon icon='arrow-left' />&nbsp;</span>{{ post.meta.previous_post.title }}
     </router-link>
     <router-link
       v-if='post.meta.next_post'
       :to='`/minutiae/${post.meta.next_post.slug}`'
       class='button'
     >
-      {{ post.meta.next_post.title }}<span><font-awesome-icon icon='arrow-right' /></span>
+      {{ post.meta.next_post.title }}<span>&nbsp;<font-awesome-icon icon='arrow-right' /></span>
     </router-link>
   </div>
 </template>

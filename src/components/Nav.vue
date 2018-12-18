@@ -19,9 +19,7 @@ export default {
 
 <style scoped>
 nav{
-  border-style: solid;
-  border-color: #d5d5d5;
-  border-width: 1px 0;
+  text-align: center;
   position: relative;
   z-index: 1;
 }
