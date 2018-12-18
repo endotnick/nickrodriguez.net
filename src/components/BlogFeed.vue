@@ -55,8 +55,12 @@ h1 {
   font-family: lobster, cursive;
   font-weight: 400;
 }
+a:hover {
+  text-decoration: none;
+}
 figure {
   position: relative;
+  margin: 0;
 }
 
 figure::before {
