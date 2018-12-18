@@ -1,11 +1,11 @@
 <template>
   <footer>
     <span>
-      <font-awesome-icon icon="code" /> w/ <font-awesome-icon icon="heart" /> by <a href='https://github.com/endotnick/nickrodriguez.net'>n.</a>
+      <font-awesome-icon icon='code' /> w/ <font-awesome-icon icon='heart' /> by <a href='https://github.com/endotnick/nickrodriguez.net'>n.</a>
     </span>
     <span> | </span>
     <span>
-      <font-awesome-icon icon="file" /> served by <a href='https://buttercms.com'><img src="../assets/butter-y.webp"/></a>
+      <font-awesome-icon icon='file' /> served by <a href='https://buttercms.com'><img src='../assets/butter-y.webp'/></a>
     </span>
   </footer>
 </template>
@@ -19,11 +19,13 @@ export default {
 <style scoped>
   footer {
     font-family: 'Lobster', cursive;
-    bottom: 1em;
-    position: absolute;
+    background-color: #fff;
     text-align: center;
+    position: fixed;
     max-width: 800px;
+    padding: 1em;
     width: 100%;
+    bottom: 0;
   }
 
   img {

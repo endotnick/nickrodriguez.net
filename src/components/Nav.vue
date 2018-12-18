@@ -20,8 +20,6 @@ export default {
 <style scoped>
 nav{
   text-align: center;
-  position: relative;
-  z-index: 1;
 }
 a {
   text-decoration: line-through;

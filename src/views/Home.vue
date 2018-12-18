@@ -23,6 +23,7 @@ export default {
 
 <style scoped>
 nav {
+  position: relative;
   border-width: 1px 0;
   border-color: #d5d5d5;
   border-style: solid;

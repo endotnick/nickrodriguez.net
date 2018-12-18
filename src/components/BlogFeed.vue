@@ -17,6 +17,7 @@
               <p>{{ post.summary }}</p>
           </article>
         </router-link>
+      <hr>
       </div>
   </div>
 </template>

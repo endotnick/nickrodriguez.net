@@ -17,6 +17,11 @@ export default {
 
 <style scoped>
 nav {
+  position: fixed;
+  background-color: #FFF;
   border-bottom: 1px solid #d5d5d5;
+  max-width: 800px;
+  width: 100%;
+  top: 0;
 }
 </style>

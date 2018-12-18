@@ -25,12 +25,10 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Prompt, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  width: 100%;
+/* Prevents vertical scrollbar from shifting page */
+html {
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
 }
 body {
   max-width: 800px;
@@ -68,6 +66,14 @@ p {
 }
 figure, img{
   max-width: 100%;
+}
+#app {
+  font-family: Prompt, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  width: 100%;
+  margin-bottom: 3em;
 }
 .component-fade-enter-active,
 .component-fade-leave-active {
