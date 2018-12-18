@@ -67,6 +67,9 @@ p {
 figure, img{
   max-width: 100%;
 }
+img {
+  height: auto;
+}
 #app {
   font-family: Prompt, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

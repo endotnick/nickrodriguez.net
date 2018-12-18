@@ -1,6 +1,6 @@
 <template>
   <div class="projects">
-    <h1>This is a projects page view!</h1>
+    <h1>Projects!</h1>
     <Projects/>
   </div>
 </template>
@@ -14,3 +14,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+h1 {
+  margin-bottom: 0;
+}
+</style>
