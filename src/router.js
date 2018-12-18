@@ -14,12 +14,12 @@ export default new Router({
       component: () => import('./views/Home.vue'),
     },
     {
-      path: '/blog',
+      path: '/minutiae',
       name: 'blog-feed',
       component: () => import('./views/Blog.vue'),
     },
     {
-      path: '/blog/:slug',
+      path: '/minutiae/:slug',
       name: 'blog-post',
       component: () => import('./components/BlogPost.vue'),
     },

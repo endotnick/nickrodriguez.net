@@ -1,12 +1,12 @@
 <template>
-  <div id="blog-feed">
+  <div id='blog-feed'>
       <h1>{{ page_title }}</h1>
-      <div class='post' v-for="(post,index) in posts" :key="post.slug + '_' + index">
-        <router-link :to="'/blog/' + post.slug">
-          <article class="media">
+      <div class='post' v-for='(post,index) in posts' :key='`${post.slug}_${index}`'>
+        <router-link :to='`/minutiae/${post.slug}`'>
+          <article class='media'>
             <figure>
-              <img v-if="post.featured_image" :src="post.featured_image" alt="">
-              <img v-else src="http://via.placeholder.com/250x250" alt="">
+              <img v-if='post.featured_image' :src='post.featured_image' alt=''>
+              <img v-else src='http://via.placeholder.com/250x250' alt=''>
             </figure>
             <h2>{{ post.title }}</h2>
             <p>{{ post.summary }}</p>
@@ -23,7 +23,7 @@ export default {
   name: 'blog-feed',
   data() {
     return {
-      page_title: 'Minutiae',
+      page_title: '/Minutiae/',
       posts: [],
     };
   },
