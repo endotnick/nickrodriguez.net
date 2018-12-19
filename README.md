@@ -1,4 +1,6 @@
-# nickrodriguez.net
+# [nickrodriguez.net](https://nickrodriguez.net)
+
+> A component based portfolio built on Vue.js w/ ButterCMS as a headless blog engine. Continuously deployed through Netlify!
 
 ## Project setup
 ```

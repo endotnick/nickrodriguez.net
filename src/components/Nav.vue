@@ -20,9 +20,6 @@ export default {
 nav{
   text-align: center;
 }
-a {
-  text-decoration: line-through;
-}
 ul{
   list-style: none;
 }

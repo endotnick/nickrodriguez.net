@@ -42,13 +42,12 @@ h1 {
   font-size: 2em;
   display: inline-block
 }
-.vita >>> p, .vita >>> ul  {
-  text-align: left;  
+.vita >>> p, .vita >>> ul {
+  text-align: left;
 }
 .vita >>> ul {
   margin-left: 1em;
 }
-
 @media screen and (max-width: 730px) {
   .vita >>> div h1 {
     max-width: 400px;
