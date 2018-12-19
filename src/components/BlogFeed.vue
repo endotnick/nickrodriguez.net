@@ -3,7 +3,7 @@
       <h1>{{ page_title }}</h1>
       <div class='post' v-for='(post,index) in posts' :key='`${post.slug}_${index}`'>
         <router-link :to='`/minutiae/${post.slug}`'>
-          <article class='media'>
+          <article class='media'>            
             <figure>
               <img v-if='post.featured_image' :src='post.featured_image' alt=''>
               <img v-else src='http://via.placeholder.com/250x250' alt=''>
@@ -15,10 +15,9 @@
                 </span>
               </figcaption>
             </figure>
-              <p>{{ post.summary }}</p>
+            <p>{{ post.summary }}</p>
           </article>
         </router-link>
-      <hr>
       </div>
   </div>
 </template>
@@ -57,6 +56,13 @@ h1 {
   font-family: lobster, cursive;
   font-weight: 400;
 }
+article {
+  box-shadow: 4px 4px 10px 1px #b3b3b3;
+}
+article p {
+  padding: 1em;
+  margin-top: 0;
+}
 a:hover {
   text-decoration: none;
 }
@@ -64,7 +70,6 @@ figure {
   position: relative;
   margin: 0;
 }
-
 figure::before {
   content: "";
   position: absolute;
@@ -74,20 +79,17 @@ figure::before {
   height: 33%;
   background-image: linear-gradient(180deg,rgba(10,9,8,.33),transparent);
 }
-
-figure::before:hover {
+figcaption:hover {
   background-color: rgba(10,9,8,0.65);
 }
-/* img:hover {
-  opacity: 0.5;
-} */
-
 figcaption {
   position: absolute;
   top: 0;
   display: block;
   width: 100%;
-  height: 100%;
+  transition: background-color 225ms cubic-bezier(.4,.25,.3,1);
+  /* There is a ghost somewhere */
+  height: calc(100% - 7px);
 }
 .post_title {
   padding-top: 0.2rem;
@@ -98,7 +100,6 @@ figcaption {
   font-family: Prompt,Helvetica,Arial,sans-serif;
   font-weight: semi-bold;
 }
-
 .post_author {
   position: absolute;
   bottom: .75rem;
