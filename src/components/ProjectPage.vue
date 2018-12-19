@@ -2,7 +2,22 @@
   <div id='project'>
     <h1>{{ project.title }}</h1>
     <div v-html='project.long_description'></div>
-    <div>{{ project.stack }}</div>
+    <p class='stack'>Built using {{ project.stack }}</p>
+    <p class='links'>
+      <a class='source' :href='`${project.source}`'>
+        Source: <font-awesome-icon :icon="['fab', 'github']"/>
+      </a>
+      <span v-if='project.live_demo'>
+        <a :href='`${project.live_demo}`'>
+          Live Demo: <font-awesome-icon icon='desktop'/>
+        </a>
+      </span>
+      <span v-if='project.live_prod'>
+        <a :href='`${project.live_prod}`'>
+          Live Site: <font-awesome-icon icon='desktop'/>
+        </a>
+      </span>
+    </p>
   </div>
 </template>
 
@@ -33,4 +48,23 @@ export default {
 </script>
 
 <style scoped>
+  #project {
+    padding: 0 2em;
+  }
+  /* Deep select v-html */
+  #project >>> li {
+    display: block;
+    padding: 0.2em;
+  }
+  #project >>> ul {
+    width: 98%;
+    margin: auto;
+    list-style-type: circle;
+  }
+
+  @media screen and (max-width: 510px){
+    h1 {
+      font-size: 2em;
+    }
+  }
 </style>
