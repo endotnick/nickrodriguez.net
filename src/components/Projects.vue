@@ -107,6 +107,7 @@ figcaption {
 .description {
   padding: 0.5em;
   font-size: 1em;
+  height: 70px;
 }
 .links, .details {
   text-align: center;
