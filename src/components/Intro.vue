@@ -46,9 +46,6 @@ export default {
 h1 {
     margin: .2em 0;
 }
-ul {
-  font-size: 1.5em;
-}
 img {
   border: 1px solid #d5d5d5;;
   border-radius: 15em;
@@ -63,7 +60,14 @@ img {
 }
 .social ul {
   text-align: center;
+  font-size: 1.5em;
   margin: 0;
   margin-bottom: 0.7em;
+  list-style: none;
+}
+li {
+  display: inline;
+  margin-right: 20px;
+  font-weight: bold;
 }
 </style>

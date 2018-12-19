@@ -1,7 +1,7 @@
 <template>
   <div id='blog-post'>
     <h1>{{ post.data.title }}</h1>
-    <h4>{{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
+    <h4>By {{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
     <div v-html='post.data.body'></div>
 
     <router-link

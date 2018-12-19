@@ -17,5 +17,7 @@ export default {
 <style scoped>
 h1 {
   margin-bottom: 0;
+  font-family: lobster, cursive;
+  font-weight: 400;
 }
 </style>

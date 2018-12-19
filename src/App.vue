@@ -39,12 +39,6 @@ body {
 ul {
   font-family:'Helvetica', 'Arial', 'Sans-Serif';
   padding: 0px;
-  list-style: none;
-  font-weight: bold;
-}
-li {
-  display: inline;
-  margin-right: 20px;
 }
 a {
   text-decoration: none;
@@ -57,7 +51,6 @@ a:hover {
 h1 {
   font-size: 3em;
   text-align: center;
-
 }
 p {
   line-height: 1.4em;

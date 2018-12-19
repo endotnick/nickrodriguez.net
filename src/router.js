@@ -34,9 +34,9 @@ export default new Router({
       component: () => import('./components/ProjectPage.vue'),
     },
     {
-      path: '/resume',
-      name: 'resume',
-      component: () => import('./views/Resume.vue'),
+      path: '/vita',
+      name: 'vita',
+      component: () => import('./views/Vita.vue'),
     },
   ],
 });

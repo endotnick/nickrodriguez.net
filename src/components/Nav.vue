@@ -5,7 +5,7 @@
       <li><router-link to="/">About</router-link></li>
       <li><router-link to="/minutiae">Blog</router-link></li>
       <li><router-link to="/projects">Projects</router-link></li>
-      <li><router-link to="/resume">Resume</router-link></li>
+      <li><router-link to="/vita">Resume</router-link></li>
     </ul>
   </nav>
 </template>
@@ -22,5 +22,13 @@ nav{
 }
 a {
   text-decoration: line-through;
+}
+ul{
+  list-style: none;
+}
+li {
+  display: inline;
+  margin-right: 20px;
+  font-weight: bold;
 }
 </style>
