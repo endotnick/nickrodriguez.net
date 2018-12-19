@@ -36,8 +36,6 @@ export default {
       butter.post.retrieve(this.$route.params.slug)
         .then((res) => {
           this.post = res.data;
-        }).catch((res) => {
-          console.log(res);
         });
     },
   },
