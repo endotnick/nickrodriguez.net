@@ -1,6 +1,6 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
-  faEnvelope, faArrowLeft, faArrowRight, faCode, faHeart, faFile,
+  faEnvelope, faArrowLeft, faArrowRight, faCode, faHeart, faFile, faDesktop,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub, faLinkedinIn, faInstagram, faTwitter,
@@ -24,6 +24,7 @@ library.add(
   faInstagram,
   faTwitter,
   faFile,
+  faDesktop,
 );
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);

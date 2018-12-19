@@ -29,6 +29,11 @@ export default new Router({
       component: () => import('./views/Projects.vue'),
     },
     {
+      path: '/projects/:slug',
+      name: 'project-page',
+      component: () => import('./components/ProjectPage.vue'),
+    },
+    {
       path: '/resume',
       name: 'resume',
       component: () => import('./views/Resume.vue'),

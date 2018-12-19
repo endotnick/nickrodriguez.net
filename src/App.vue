@@ -60,12 +60,14 @@ h1 {
 
 }
 p {
-  font-size: 1.5em;
   line-height: 1.4em;
   color: #333;
 }
 figure, img{
   max-width: 100%;
+}
+img {
+  height: auto;
 }
 #app {
   font-family: Prompt, Arial, sans-serif;
