@@ -10,7 +10,8 @@
               <figcaption>
                 <span class='post_title'>{{ post.title }}</span>
                 <span class='post_author'>
-                by {{ post.author.first_name }} {{ post.author.last_name }}
+                  Posted on {{ prettyDate(post.published) }} by
+                  {{ post.author.first_name }} {{ post.author.last_name }}
                 </span>
               </figcaption>
             </figure>
@@ -24,6 +25,7 @@
 
 <script>
 import butter from '@/buttercms';
+import prettyDate from '@/helpers';
 
 export default {
   name: 'blog-feed',
@@ -34,6 +36,7 @@ export default {
     };
   },
   methods: {
+    prettyDate,
     getPosts() {
       butter.post.list({
         page: 1,
