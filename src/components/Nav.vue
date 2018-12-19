@@ -23,4 +23,12 @@ nav{
 a {
   text-decoration: line-through;
 }
+ul{
+  list-style: none;
+}
+li {
+  display: inline;
+  margin-right: 20px;
+  font-weight: bold;
+}
 </style>

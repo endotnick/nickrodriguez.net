@@ -33,4 +33,25 @@ h1 {
   font-family: lobster, cursive;
   font-weight: 400;
 }
+.vita {
+  padding: 0 2em;
+  text-align: center;
+}
+/* Deep select v-html */
+.vita >>> div h1 {
+  font-size: 2em;
+  display: inline-block
+}
+.vita >>> p, .vita >>> ul  {
+  text-align: left;  
+}
+.vita >>> ul {
+  margin-left: 1em;
+}
+
+@media screen and (max-width: 730px) {
+  .vita >>> div h1 {
+    max-width: 400px;
+  }
+}
 </style>

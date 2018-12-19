@@ -39,12 +39,6 @@ body {
 ul {
   font-family:'Helvetica', 'Arial', 'Sans-Serif';
   padding: 0px;
-  list-style: none;
-  font-weight: bold;
-}
-li {
-  display: inline;
-  margin-right: 20px;
 }
 a {
   text-decoration: none;
