@@ -3,7 +3,7 @@
       <h1>{{ page_title }}</h1>
       <div class='post' v-for='(post,index) in posts' :key='`${post.slug}_${index}`'>
         <router-link :to='`/minutiae/${post.slug}`'>
-          <article class='media'>            
+          <article class='media'>
             <figure>
               <img v-if='post.featured_image' :src='post.featured_image' alt=''>
               <img v-else src='http://via.placeholder.com/250x250' alt=''>

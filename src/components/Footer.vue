@@ -5,7 +5,7 @@
     </span>
     <span> | </span>
     <span>
-      <font-awesome-icon icon='file' /> served by <a href='https://buttercms.com'><img src='../assets/butter-y.webp'/></a>
+      <font-awesome-icon icon='file' /> served by <a class='butter' href='https://buttercms.com'></a>
     </span>
   </footer>
 </template>
@@ -35,5 +35,16 @@ export default {
   a {
     color: rgb(255, 183, 77);
     text-decoration: none;
+  }
+  .butter, .butter:hover{
+    padding-left: 100px;
+  }
+  .butter {
+    background: url('../assets/butter-y.webp') no-repeat;
+    background-size: 100px;
+  }
+  .butter:hover {
+    background: url('../assets/butter-b.webp') no-repeat;
+    background-size: 100px;
   }
 </style>
