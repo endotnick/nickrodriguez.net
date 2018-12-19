@@ -36,6 +36,9 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+nav, footer {
+  background-color: rgba(252,253,255,.9);
+}
 ul {
   font-family:'Helvetica', 'Arial', 'Sans-Serif';
   padding: 0px;

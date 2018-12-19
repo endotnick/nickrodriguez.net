@@ -19,7 +19,6 @@ export default {
 <style scoped>
   footer {
     font-family: 'Lobster', cursive;
-    background-color: #fff;
     text-align: center;
     position: fixed;
     max-width: 800px;
