@@ -91,6 +91,9 @@ figcaption {
   /* There is a ghost somewhere */
   height: calc(100% - 7px);
 }
+#blog-feed {
+  padding: 0 1em;
+}
 .post_title {
   padding-top: 0.2rem;
   padding-left: 0.75rem;

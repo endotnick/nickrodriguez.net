@@ -26,12 +26,6 @@ export default {
     width: 100vw;
     bottom: 0;
   }
-
-  img {
-    height: 1.5em;
-    margin-bottom: -.5em;
-  }
-
   a {
     color: rgb(255, 183, 77);
     text-decoration: none;

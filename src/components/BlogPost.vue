@@ -3,7 +3,7 @@
     <h1>{{ post.data.title }}</h1>
     <h4>By {{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
     <div v-html='post.data.body'></div>
-
+    <hr>
     <router-link
       v-if='post.meta.previous_post'
       :to='`/minutiae/${post.meta.previous_post.slug}`'
@@ -53,4 +53,7 @@ export default {
 </script>
 
 <style scoped>
+#blog-post {
+  padding: 0 1em;
+}
 </style>
