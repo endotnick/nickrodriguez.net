@@ -57,7 +57,6 @@ a:hover {
 h1 {
   font-size: 3em;
   text-align: center;
-
 }
 p {
   line-height: 1.4em;
