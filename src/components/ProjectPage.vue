@@ -53,15 +53,13 @@ export default {
   }
   /* Deep select v-html */
   #project >>> li {
-    display: block;
     padding: 0.2em;
   }
   #project >>> ul {
     width: 98%;
     margin: auto;
-    list-style-type: circle;
+    padding-left: 2em;
   }
-
   @media screen and (max-width: 510px){
     h1 {
       font-size: 2em;
