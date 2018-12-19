@@ -59,7 +59,6 @@ export default {
         page_size: 10,
       }).then((res) => {
         this.projects = res.data.data;
-        console.log(this.projects[0]);
       });
     },
   },
