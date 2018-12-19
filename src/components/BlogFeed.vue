@@ -3,7 +3,7 @@
       <h1>{{ page_title }}</h1>
       <div class='post' v-for='(post,index) in posts' :key='`${post.slug}_${index}`'>
         <router-link :to='`/minutiae/${post.slug}`'>
-          <article class='media'>            
+          <article class='media'>
             <figure>
               <img v-if='post.featured_image' :src='post.featured_image' alt=''>
               <img v-else src='http://via.placeholder.com/250x250' alt=''>
@@ -90,6 +90,9 @@ figcaption {
   transition: background-color 225ms cubic-bezier(.4,.25,.3,1);
   /* There is a ghost somewhere */
   height: calc(100% - 7px);
+}
+#blog-feed {
+  padding: 0 1em;
 }
 .post_title {
   padding-top: 0.2rem;
