@@ -65,6 +65,10 @@ figure, img{
 img {
   height: auto;
 }
+iframe {
+  max-width: 100%;
+  max-height: 56.25vw;
+}
 #app {
   font-family: Prompt, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

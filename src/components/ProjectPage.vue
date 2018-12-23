@@ -2,7 +2,7 @@
   <div id='project'>
     <h1>{{ project.title }}</h1>
     <div v-html='project.long_description'></div>
-    <p class='stack'>Built using {{ project.stack }}</p>
+    <p class='stack'>Built with {{ project.stack }}.</p>
     <p class='links'>
       <a class='source' :href='`${project.source}`'>
         Source: <font-awesome-icon :icon="['fab', 'github']"/>
