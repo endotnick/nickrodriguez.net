@@ -37,7 +37,7 @@ export default {
         .then((res) => {
           this.project = res.data.data.fields;
         }).catch((res) => {
-          console.log(res);
+          // console.log(res);
         });
     },
   },
