@@ -4,20 +4,23 @@
     <h4>By {{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
     <div v-html='post.data.body'></div>
     <hr>
-    <router-link
-      v-if='post.meta.previous_post'
-      :to='`/minutiae/${post.meta.previous_post.slug}`'
-      class='button'
-    >
+    <p class='adjacent-posts'>
+      <router-link
+        v-if='post.meta.previous_post'
+        :to='`/minutiae/${post.meta.previous_post.slug}`'
+        class='button'
+      >
       <span><font-awesome-icon icon='arrow-left' />&nbsp;</span>{{ post.meta.previous_post.title }}
-    </router-link>
-    <router-link
-      v-if='post.meta.next_post'
-      :to='`/minutiae/${post.meta.next_post.slug}`'
-      class='button'
-    >
-      {{ post.meta.next_post.title }}<span>&nbsp;<font-awesome-icon icon='arrow-right' /></span>
-    </router-link>
+      </router-link>
+      <span v-if='post.meta.previous_post && post.meta.next_post'>|</span>
+      <router-link
+        v-if='post.meta.next_post'
+        :to='`/minutiae/${post.meta.next_post.slug}`'
+        class='button'
+      >
+        {{ post.meta.next_post.title }}<span>&nbsp;<font-awesome-icon icon='arrow-right' /></span>
+      </router-link>
+    </p>
   </div>
 </template>
 
@@ -61,6 +64,9 @@ export default {
 #blog-post >>> figcaption {
   text-align: center;
   font-size: 0.75em;
+}
+.adjacent-posts {
+  text-align: center;
 }
 @media screen and (max-width: 540px) {
   h1 {
