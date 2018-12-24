@@ -54,4 +54,17 @@ export default {
 #blog-post {
   padding: 0 1em;
 }
+#blog-post >>> img {
+  margin: auto;
+  display:block
+}
+#blog-post >>> figcaption {
+  text-align: center;
+  font-size: 0.75em;
+}
+@media screen and (max-width: 540px){
+  h1 {
+    font-size: 2em;
+  }
+}
 </style>

@@ -2,14 +2,13 @@
   <div class="vita">
     <h1>Vita!</h1>
     <VueMarkdown :source='md'></VueMarkdown>
-    <p>View as Markdown at <a :href='vita'>GitHub gist</a></p>
+    <p>View Markdown at <a :href='vita'>GitHub gist</a></p>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
 import VueMarkdown from 'vue-markdown';
-
 
 export default {
   name: 'Vita',
