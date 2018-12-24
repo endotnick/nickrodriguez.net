@@ -43,6 +43,9 @@ ul {
   font-family:'Helvetica', 'Arial', 'Sans-Serif';
   padding: 0px;
 }
+code {
+  background-color: #f1f1f1;
+}
 a {
   text-decoration: none;
   color: #999;

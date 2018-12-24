@@ -62,7 +62,7 @@ export default {
   text-align: center;
   font-size: 0.75em;
 }
-@media screen and (max-width: 540px){
+@media screen and (max-width: 540px) {
   h1 {
     font-size: 2em;
   }

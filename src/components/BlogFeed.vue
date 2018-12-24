@@ -108,4 +108,10 @@ figcaption {
   bottom: .75rem;
   right: .75rem;
 }
+
+@media screen and (max-width: 540px) {
+  .post_title {
+    font-size: 2rem;
+  }
+}
 </style>
