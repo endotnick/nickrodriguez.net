@@ -2,7 +2,7 @@
   <div class="vita">
     <h1>Vita!</h1>
     <VueMarkdown :source='md'></VueMarkdown>
-    <p>View Markdown at <a :href='vita'>GitHub gist</a></p>
+    <p><a :href='vita'>View as Markdown </a> | <a :href='pdf'>View as PDF</a></p>
   </div>
 </template>
 
@@ -18,8 +18,9 @@ export default {
   data() {
     return {
       md: '',
+      pdf: 'https://drive.google.com/file/d/1dEBryepECkqFH41VRVib2XxHMEuPd9Ew/view',
       vita: 'https://gist.githubusercontent.com/endotnick/233613454f7a963f309dc50b4a74f496',
-      hash: '6144c1a41e7b24018b1d17d23ca12d8e34a7cfd9',
+      hash: '9f4a3ea6aa0daf193e54721a1752bc45d04a6b54',
       filename: 'nick_rodriguez_resume.md',
     };
   },
