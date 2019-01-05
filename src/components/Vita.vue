@@ -2,7 +2,7 @@
   <div class="vita">
     <h1>Vita!</h1>
     <VueMarkdown :source='md'></VueMarkdown>
-    <p><a :href='vita'>View as Markdown </a> | <a :href='pdf'>View as PDF</a></p>
+    <p><a :href='vita'>View as Markdown</a> | <a :href='pdf'>View as PDF</a></p>
   </div>
 </template>
 
