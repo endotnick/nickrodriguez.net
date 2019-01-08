@@ -14,13 +14,13 @@ export default {
   name: 'Vita',
   components: {
     VueMarkdown,
-  },
+  },  
   data() {
     return {
       md: '',
       pdf: 'https://drive.google.com/file/d/1dEBryepECkqFH41VRVib2XxHMEuPd9Ew/view',
       vita: 'https://gist.githubusercontent.com/endotnick/233613454f7a963f309dc50b4a74f496',
-      hash: '9f4a3ea6aa0daf193e54721a1752bc45d04a6b54',
+      hash: '28298f330c0fab9f029c041860be518e05ee9f8f',
       filename: 'nick_rodriguez_resume.md',
     };
   },
