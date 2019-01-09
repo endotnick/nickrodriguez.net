@@ -7,13 +7,13 @@
             <figure>
               <img v-if='post.featured_image' :src='post.featured_image' alt=''>
               <img v-else src='http://via.placeholder.com/250x250' alt=''>
-              <figcaption>
+              <!-- <figcaption>
                 <span class='post_title'>{{ post.title }}</span>
                 <span class='post_author'>
                   Posted on {{ prettyDate(post.published) }} by
                   {{ post.author.first_name }} {{ post.author.last_name }}
                 </span>
-              </figcaption>
+              </figcaption> -->
             </figure>
             <p>{{ post.summary }}</p>
           </article>
@@ -24,7 +24,7 @@
 
 <script>
 import butter from '@/buttercms';
-import prettyDate from '@/helpers';
+// import prettyDate from '@/helpers';
 
 export default {
   name: 'blog-feed',
@@ -35,7 +35,7 @@ export default {
     };
   },
   methods: {
-    prettyDate,
+    // prettyDate,
     getPosts() {
       butter.post.list({
         page: 1,
