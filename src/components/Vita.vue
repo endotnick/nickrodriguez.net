@@ -20,7 +20,7 @@ export default {
       md: '',
       pdf: 'https://drive.google.com/file/d/1dEBryepECkqFH41VRVib2XxHMEuPd9Ew/view',
       vita: 'https://gist.githubusercontent.com/endotnick/233613454f7a963f309dc50b4a74f496',
-      hash: '28298f330c0fab9f029c041860be518e05ee9f8f',
+      hash: 'aa31faff6e1d3c3fc2ee2195615c3ef7ef8f0be5',
       filename: 'nick_rodriguez_resume.md',
     };
   },
