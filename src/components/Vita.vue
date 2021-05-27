@@ -19,7 +19,7 @@ export default {
     return {
       md: '',
       pdf: 'https://drive.google.com/file/d/1dEBryepECkqFH41VRVib2XxHMEuPd9Ew/view',
-      vita: 'https://gist.githubusercontent.com/endotnick/233613454f7a963f309dc50b4a74f496',
+      vita: 'https://gist.githubusercontent.com/Ellimistdev/233613454f7a963f309dc50b4a74f496',
       hash: 'b77eab16bf52ee47ddd0d7d312340ae8cc88c5c1',
       filename: 'nick_rodriguez_resume.md',
     };
